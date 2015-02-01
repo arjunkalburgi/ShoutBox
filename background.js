@@ -21,7 +21,7 @@ chrome.omnibox.onInputChanged.addListener(function(text, suggest) {
 	suggest([
 		{content: text + " ", description: "You can mention people too! Type '@' followed by the twitter handle!"},
 		{content: text + " ", description: "Post links, they'll automatically shorten!"},
-		{content: text + " ", description: "Make a Facebook post"}
+		// {content: text + " ", description: "Make a Facebook post"}
 	]);
 });
 
