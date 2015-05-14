@@ -54,11 +54,13 @@ chrome.omnibox.onInputEntered.addListener(function(text) {
 	tk = localStorage.getItem("tkey");
 	ts = localStorage.getItem("tsec");
 	
-	// Sending information to server
-	console.log("before xml");
+	localStorage.setItem("tweetstatus", text);
 
-	var xmlhttp=new XMLHttpRequest();
-	xmlhttp.open("GET","http://localhost:3000/post-status?message=" +  encodeURIComponent(text),true);
-	xmlhttp.send();
+	// Sending information to server
+	//console.log("before xml");
+
+	//var xmlhttp=new XMLHttpRequest();
+	//xmlhttp.open("GET","http://localhost:3000/post-status?message=" +  encodeURIComponent(text),true);
+	//xmlhttp.send();
 });
 

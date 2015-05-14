@@ -17,6 +17,11 @@
 		"notifications",
 		"http://www.twitter.com/"],
 	
+	"browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click here!"
+  		},
 
 	"web_accessible_resources": [
 		"icon.png",
